@@ -13,5 +13,5 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Show as News", name: "isNewsPost", widget: "checkbox"}
+      - {label: "Show as News", name: "isNewsPost", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
