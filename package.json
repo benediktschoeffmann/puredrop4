@@ -12,6 +12,8 @@
     "buefy": "^0.9.13",
     "gridsome": "^0.7.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
-    "netlify-cms": "^2.10.183"
+    "netlify-cms": "^2.10.183",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.4.0"
   }
 }
