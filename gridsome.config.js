@@ -10,7 +10,7 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "content/posts/*.md",
+        path: "content/posts/**/*.md",
         typeName: "Post",
         refs: {
           tags: {
@@ -21,7 +21,7 @@ module.exports = {
       }
     },
     {
-      use: "gridsome-plugin-netlify-cms",
+      use: `gridsome-plugin-netlify-cms`,
       options: {
         publicPath: "/admin",
         modulePath: `src/admin/index.js`
