@@ -1,15 +1,30 @@
 <template>
   <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
-    </header>
-    <slot/>
+    <Navbar />
+    <section class="hero is-medium is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1">
+            {{ pageTitle }}
+          </h1>
+          <h2 v-if="pageSubtitle" class="subtitle">
+            {{ pageSubtitle }}
+          </h2>
+        </div>
+      </div>
+    </section>
+    <main>
+      <slot />
+    </main>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Created by <strong>Galahad Inc.</strong>
+          . Powered by <a href="https://gridsome.org/"><strong>Gridsome</strong></a>
+          >.
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -20,6 +35,14 @@ query {
   }
 }
 </static-query>
+
+<script>
+  import Navbar from '~/components/NavBar';
+  export default {
+    props: { pageTitle: '', pageSubtitle: '', color: '' },
+    components: { Navbar },
+  };
+</script>
 
 <style>
 body {
