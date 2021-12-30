@@ -6,8 +6,8 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "post"
-    label: "Post"
+  - name: "posts"
+    label: "Posts"
     folder: "content/posts"
     create: true
     slug: "{{slug}}"
@@ -15,3 +15,4 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Show as News", name: "isNewsPost", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
+
