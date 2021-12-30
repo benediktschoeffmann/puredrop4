@@ -1,5 +1,5 @@
 ---
 title: Jehovah
-isNewsPost: true
+isNewsPost: false
 ---
 Sagte er.

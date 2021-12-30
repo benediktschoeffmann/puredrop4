@@ -15,13 +15,22 @@
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
     </p>
 
+    <p>
+      <PostList />
+    </p>
+
   </Layout>
 </template>
 
 <script>
+import PostList from '~/components/PostList'
+
 export default {
   metaInfo: {
     title: 'Hello, world!'
+  }, 
+  components: {
+    PostList
   }
 }
 </script>
